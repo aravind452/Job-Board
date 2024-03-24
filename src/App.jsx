@@ -58,7 +58,9 @@ function App() {
       <Header />
       <Searchbar fetchCustomJobs={fetchCustomJobs} />
       {jobs.map((job) => (
-        <JobCard key={job.id} {...job} />
+        <JobCard key={job.id} {...job}>
+          {" "}
+        </JobCard>
       ))}
     </div>
   );
